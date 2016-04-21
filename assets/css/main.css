@@ -2308,7 +2308,9 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #ed4933;
+			background-color: transparent;
+			border: solid;
+			border-color: #fff;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2318,7 +2320,10 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #ef5e4a !important;
+				background-color: transparent;
+				border: solid;
+				border-color: yellow;
+				/*background-color: #ef5e4a !important;*/
 			}
 
 			input[type="submit"].special:active,
@@ -3579,36 +3584,9 @@
 
 /* CTA */
 
-	#cta .inner {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		max-width: 45em;
-	}
-
-		#cta .inner header {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			padding-right: 3em;
-			width: 70%;
-		}
-
 			#cta .inner header p {
 				color: inherit;
 			}
-
-		#cta .inner .actions {
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			width: 30%;
-		}
-
-		@media screen and (max-width: 980px) {
 
 			#cta .inner {
 				display: block;
@@ -3627,24 +3605,18 @@
 					width: 100%;
 				}
 
-		}
-
-		@media screen and (max-width: 736px) {
-
 			#cta .inner .actions {
 				max-width: none;
 			}
-
-		}
 
 /* Main */
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3719,22 +3691,11 @@
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		background-color: #1d242a;
 		text-align: center;
 	}
-
-		#footer .icons {
-			font-size: 1.25em;
-		}
-
-			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
-			}
-
-				#footer .icons a:hover {
-					color: #fff;
-				}
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
@@ -3745,63 +3706,13 @@
 			text-transform: uppercase;
 		}
 
-			#footer .copyright li {
-				border-left: solid 1px rgba(255, 255, 255, 0.5);
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 1em;
-				padding-left: 1em;
-			}
-
-				#footer .copyright li:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
-				#footer .copyright li a {
-					color: inherit;
-				}
-
-					#footer .copyright li a:hover {
-						color: #fff;
-					}
-
-				@media screen and (max-width: 480px) {
-
-					#footer .copyright li {
-						border: 0;
-						display: block;
-						line-height: 1.65em;
-						margin: 0;
-						padding: 0.5em 0;
-					}
-
-				}
-
-		@media screen and (max-width: 980px) {
-
-			#footer {
-				padding: 4em 3em 2em 3em ;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#footer {
-				padding: 3em 2em 1em 2em ;
-			}
-
-		}
-
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3819,10 +3730,10 @@
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/watercolor.png");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -3837,4 +3748,21 @@
 /*Zoes CSS*/
 .cta-yellow {
 	color: yellow;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.icon-block {
+	padding-bottom: 40px;
+}
+
+.icon {
+	margin-bottom: 18px;
+}
+
+#one {
+	padding-bottom: 190px;
+	padding-top: 70px;
 }
